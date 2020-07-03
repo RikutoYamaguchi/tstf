@@ -1,5 +1,3 @@
-import {awsVpcCompiler} from './awsVpcCompiler'
+import { awsVpcCompiler } from './awsVpcCompiler';
 
-export {
-    awsVpcCompiler
-}
+export { awsVpcCompiler };

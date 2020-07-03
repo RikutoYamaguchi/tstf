@@ -1,20 +1,18 @@
-import fs from "fs";
-import {createCompiler} from './createCompiler'
+import fs from 'fs';
+import { createCompiler } from './createCompiler';
 
-const compile = (output: string, ...objectInstances: Array<object>) => {
-    if (!fs.existsSync(output)) {
-        fs.mkdirSync(output)
-    }
+const compile = (output: string, ...objectInstances: object[]) => {
+  if (!fs.existsSync(output)) {
+    fs.mkdirSync(output);
+  }
 
-    let context = ''
-    objectInstances.forEach(objectInstance => {
-        const compiler = createCompiler(objectInstance)
-        context += compiler.compile()
-    })
+  let context = '';
+  objectInstances.forEach((objectInstance) => {
+    const compiler = createCompiler(objectInstance);
+    context += compiler.compile();
+  });
 
-    fs.writeFileSync(output + '/main.tf', context)
-}
+  fs.writeFileSync(output + '/main.tf', context);
+};
 
-export {
-    compile
-}
+export { compile };

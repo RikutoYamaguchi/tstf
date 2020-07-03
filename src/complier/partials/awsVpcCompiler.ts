@@ -1,7 +1,7 @@
-import {AwsVpc} from '../..';
+import { AwsVpc } from '../..';
 
 const awsVpcCompiler = (awsVpc: AwsVpc) => {
-    return `resource "aws_vpc" "${awsVpc.name}" {
+  return `resource "aws_vpc" "${awsVpc.name}" {
   cidr_block = "${awsVpc.cidrBlock}"
   enable_dns_support = ${awsVpc.enableDnsSupport ? 'true' : 'false'}
   enable_dns_hostnames = ${awsVpc.enableDnsHostnames ? 'true' : 'false'}
@@ -11,9 +11,7 @@ const awsVpcCompiler = (awsVpc: AwsVpc) => {
   }
 }
 
-`
-}
+`;
+};
 
-export {
-    awsVpcCompiler
-}
+export { awsVpcCompiler };
