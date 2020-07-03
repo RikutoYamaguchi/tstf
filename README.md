@@ -1,6 +1,6 @@
 # tstf
 
-Typescript for Terraform
+TypeScript for Terraform
 
 ## Useage
 
