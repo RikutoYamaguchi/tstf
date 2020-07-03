@@ -47,10 +47,7 @@ module.exports = {
   },
   output: {
     filename: 'index.js',
-    path: path.resolve(__dirname, 'dist'),
-    library: 'Calc',
-    libraryTarget: 'umd',
-    globalObject: 'typeof self !== \'undefined\' ? self : this'
+    path: path.resolve(__dirname, 'dist')
   },
   target: "node"
 }
@@ -112,7 +109,7 @@ npm run generate
 
 ### AwsVpc
 
-create resource `aws_vpc`
+create a resource `aws_vpc`
 
 **constructors**
 
