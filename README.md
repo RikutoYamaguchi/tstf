@@ -2,7 +2,7 @@
 
 TypeScript for Terraform
 
-## Useage
+## Usage
 
 Initialize npm project:
 
