@@ -1,4 +1,4 @@
-import { AwsVpc } from '../..';
+import { AwsVpc } from '@/resources/AwsVpc';
 
 const awsVpcCompiler = (awsVpc: AwsVpc) => {
   return `resource "aws_vpc" "${awsVpc.name}" {

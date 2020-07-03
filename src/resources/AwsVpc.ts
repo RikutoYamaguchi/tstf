@@ -1,5 +1,5 @@
-import { Tags, Vpc } from './interface';
-import { AwsSubnet } from './AwsSubnet';
+import { Tags, Vpc } from '@/resources/interface';
+import { AwsSubnet } from '@/resources/AwsSubnet';
 
 interface VpcProps {
   name: string;

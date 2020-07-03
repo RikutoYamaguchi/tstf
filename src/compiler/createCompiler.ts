@@ -1,5 +1,5 @@
-import { AwsVpc } from '..';
-import { awsVpcCompiler } from './partials';
+import { AwsVpc } from '@/resources/AwsVpc';
+import { awsVpcCompiler } from '@/compiler/partials';
 
 class Compiler<T> {
   objectInstance: T;

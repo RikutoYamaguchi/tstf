@@ -1,4 +1,4 @@
-import { Subnet } from './interface';
+import { Subnet } from '@/resources/interface';
 
 interface SubnetProps {
   availabilityZone: string;

@@ -5,13 +5,15 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.js",
+    "test": "jest --config jestconfig.json",
+    "build": "webpack --config webpack.config.js && ttsc --emitDeclarationOnly",
     "prepare": "npm run build",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json"
   },
-  "files": ["dist/**/*"],
+  "files": [
+    "dist/**/*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RikutoYamaguchi/tstf.git"
@@ -27,11 +29,16 @@
   },
   "homepage": "https://github.com/RikutoYamaguchi/tstf#readme",
   "devDependencies": {
+    "@types/jest": "^26.0.3",
+    "jest": "^26.1.0",
     "prettier": "^2.0.5",
+    "ts-jest": "^26.1.1",
     "ts-loader": "^7.0.5",
     "tslint": "^6.1.2",
     "tslint-config-prettier": "^1.18.0",
+    "ttypescript": "^1.5.10",
     "typescript": "^3.9.6",
+    "typescript-transform-paths": "^1.1.14",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12"
   },
