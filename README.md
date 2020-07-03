@@ -4,6 +4,8 @@ TypeScript for Terraform
 
 ## Usage
 
+Example Repository: [tstf-example](https://github.com/RikutoYamaguchi/tstf-example)
+
 Initialize npm project:
 
 ```
@@ -13,7 +15,7 @@ npm init
 Install this package into your project:
 
 ```
-npm i -D git+https://github.com/RikutoYamaguchi/tstf.git
+npm i git+https://github.com/RikutoYamaguchi/tstf.git
 ```
 
 ※ Not ye nt in the registry.
