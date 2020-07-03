@@ -1,0 +1,35 @@
+{
+  "name": "tstf",
+  "version": "0.0.1",
+  "description": "TypeScript for Terraform",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RikutoYamaguchi/tstf.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "Terraform"
+  ],
+  "author": "RikutoYamaguchi <yamaguchirkt@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RikutoYamaguchi/tstf/issues"
+  },
+  "homepage": "https://github.com/RikutoYamaguchi/tstf#readme",
+  "devDependencies": {
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.6",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "@types/node": "^14.0.14"
+  }
+}
