@@ -1,4 +1,4 @@
-import { Resource } from '@/core/Resource';
+import { Resource } from '@/cores/Resource';
 
 test('Resource mergeOptions Test', () => {
   const resource = new Resource('aws_vpc', 'example-vpc', {
